@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.photo-card {
+    position: relative;
+    height: 403.2px;
+    width: 302.4px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25vh;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: box-shadow 500ms;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color 500ms;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.save-button {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(231 54 49);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 60px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: translateY(-70px);
+    transition: transform 500ms;
+}
+
+.bottom-buttons {
+    position: absolute;
+    height: 35px;
+    bottom: 10px;
+    left: 16px;
+    margin: 0;
+    transform: translateY(70px);
+    transition: transform 500ms;
+}
+
+.link-button {
+    display: inline-block;
+    position: absolute;
+    height: 25px;
+    width: 180px;
+    border-radius: 30px;
+    background-color: rgba(240, 240, 240, 0.592);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+#link {
+    margin-left: 10px;
+}
+
+.share-button {
+    display: inline-block;
+    position: absolute;
+    left: 190px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgba(240, 240, 240, 0.592);
+}
+
+#share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.more-button {
+    display: inline-block;
+    position: absolute;
+    left: 235px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgba(240, 240, 240, 0.592);
+}
+
+#more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* hover animations */
+
+.photo-card:hover .save-button {
+    transform: translateY(0px);
+}
+
+.photo-card:hover .bottom-buttons {
+    transform: translateY(0px);
+}
+
+.photo-card:hover .photo-overlay {
+    background-color: rgba(0, 0, 0, 0.118);
+}
+
+.photo-card:hover {
+    box-shadow: 0 8px 7px rgba(23, 1, 0, 0.373);
+    cursor: pointer;
+}
